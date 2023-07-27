@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /*Quando se baixa uma fonte externa, é preciso colocar o @font-face com a formatação, nome e tamanho da fonte que será usada, além da url que pega a fonte da pasta onde ela estiver*/
+        /* @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap'); */
+        /*O plug-in Fonts Ninja ajuda a saber qual a fonte foi usada num determinado site. Depois de descorbir qual é, é só ir no Dafont ou no Google Fonts para baixar a fonte ou importá-la*/
+        @font-face{
+            font-family:'Berk';
+            src: url('fonts/BerkshireSwash-Regular.ttf') format('truetype');
+            font-weight:normal;
+            font-size:normal;
+        }
+
+        @font-face {
+            font-family: 'Love';
+            src: url('fonts/love larry ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*Tipos de format()
+
+        -opentype (otf)
+        -truetype(ttf)
+        -embedded-opentype
+        -truetype-aat (Apple Advanced Typography)
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        h1{
+            font-family:'Berk', Times, serif;
+            font-size: 3em;
+            font-weight:normal;
+        }
+        p{
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Love Henry</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, ab, quia voluptates dolore quaerat dolor veritatis nulla iusto, cum doloremque sint cumque necessitatibus. Quisquam qui sunt fugiat inventore nam corporis.</p>
+</body>
+</html>

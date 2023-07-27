@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            /*se chama família de fontes,pq se não tiver uma, ele escolhe a outra fonte*/
+            font-family:Arial, Helvetica, sans-serif;
+            /*Medidas absolutas
+            cm mm in(polegada) px pt(ponto) pc(paica)
+            não se recomenda usar pt nem pc!
+
+             Medidas Relativas
+            em, ex, rem(relativo à fonte do body), vw(largura da viewport), vh, %
+            16px geralmente = 1em
+            Recomenda-se o em e o px apenas!
+            /*Tamanho default da fonte é 16px*/
+    
+            /* font-size: 1em;
+            font-weight: normal;
+            font-style:italic; itálico
+            text-decoration:underline; sublinhado
+            /*weight(peso), width(largura), height(altura)*/
+            /*lighter normal bold bolder */
+        }
+            h1{
+                /* font-family: 'Work Sans', sans-serif;
+                font-weight: bolder;
+                font-size: 3em;
+                font-style:italic; */
+                /*shorthand font
+                -font-style -> font-weight -> font-style -> font-family*/
+                font:italic bolder 3em 'Work Sans', sans-serif;
+            }
+            h2{
+                font: bold 2em 'Work Sans'
+            }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum expedita consequatur libero, dignissimos rem iste assumenda adipisci, beatae ut optio voluptas illum dolorum  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero eveniet minima obcaecati, soluta quis reprehenderit? Repellendus autem dolorem perferendis, minima, ipsam, dicta consequatur at
+    laudantium dolores quibusdam ullam accusamus ab! excepturi! Incidunt nam sequi inventore nemo commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, inventore! Quaerat excepturi reprehenderit nesciunt harum fuga dignissimos, veniam minima nisi reiciendis amet, qui iure molestias quas aliquid architecto ullam deserunt.</p>
+    
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime assumenda nemo fugiat nostrum illum totam eaque in itaque dolores amet, quidem, rerum non dolorum dicta iste modi voluptatem earum eos!</p>
+
+</body>
+</html>
