@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{ /*box-level*/
+            /*padding é da borda para dentro, margin é da borda para fora*/
+            
+            /*dev tools é fantástico*/
+
+            /*LEMBRE-SE DO RELÓGIO PARA SABER USAR OS VALORES NO SHORTHAND*/
+            background-color: lightgray;
+
+            height: 300px;
+            width:300px;
+
+            border: 10px solid darkslategray;
+
+            padding:10px;
+            /*No shorthand, se todos os lados vão ter o mesmo valor, não precisa repetir o número várias vezes, basta colocar uma vez só.*/
+
+            /*Se você colocar 2 valores, o primeiro (10px) será o de cima e o de baixo e p segundo (20px) o da direita e o da esquerda*/
+            
+            /*margin: auto; centraliza a caixa responsivamente*/
+
+            margin: 20px 20px 40px 20px;
+
+            outline: 5px dashed salmon;
+        }
+
+        a{ /*inline-level*/
+            border-width:10px;
+            border-style:solid; /*double solid groove dotted*/
+            border-color:red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left:10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- user agent é o seu navegador-->
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>
